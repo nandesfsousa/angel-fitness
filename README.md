@@ -1,2 +1,2 @@
 # angel-fitness
-Sistema de Gestão de Adadêmia Angel Fitness
+Sistema de Gestão de Acadêmia Angel Fitness
