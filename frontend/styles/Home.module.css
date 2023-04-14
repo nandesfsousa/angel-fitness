@@ -110,8 +110,15 @@
 .manageStudentContainer {
     margin-top: 50px;
 }
+.naviagtionStudent button {
+    background:none;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
 .naviagtionStudent {
     display: flex;
-    padding: 10px 25px;
+    padding: 10px 35px;
     justify-content: end;
+    gap: 10px;
 }
