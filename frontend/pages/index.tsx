@@ -77,7 +77,6 @@ export default function Home() {
         <button>ANTERIOR</button>
         <button>PRÓXIMO</button>
       </footer>
-
     </div>
   </Layout>
 }

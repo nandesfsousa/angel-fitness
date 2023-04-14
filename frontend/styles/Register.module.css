@@ -1,0 +1,27 @@
+
+.registerContainer input {
+    border: 1px solid grey;
+    padding: 12px;
+    margin-top: 2px;
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+}
+.registerContainer .moreInfoFromStudent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.registerContainer label {
+    margin-top: 15px;
+    display: block;
+}
+.registerContainer {
+    width: 70%;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin: auto;
+    margin-top: 15px;
+    padding: 25px;
+    border-radius: 3px;
+}

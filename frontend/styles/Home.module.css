@@ -59,7 +59,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 95%;
+    max-width: 70%;
     margin: auto;
 }
 .manageStudentContainer table tr td button:nth-child(2) {
@@ -99,13 +99,20 @@
     padding-bottom: 25px;
 }
 .manageStudentContainer table {
-    min-width: 95%;
+    min-width: 70%;
     background-color: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     margin: auto;
     margin-top: 15px;
     padding: 25px;
     border-radius: 3px;
+}
+.manageStudentContainer nav div {
+    display: flex;
+    gap: 10px;
+}
+.manageStudentContainer nav div .backButton {
+    border: 1px solid black;
 }
 .manageStudentContainer {
     margin-top: 50px;
@@ -118,7 +125,9 @@
 }
 .naviagtionStudent {
     display: flex;
-    padding: 10px 35px;
+    padding: 10px 0;
     justify-content: end;
+    margin: auto;
+    width: 70%;
     gap: 10px;
 }
