@@ -1,0 +1,31 @@
+.actionBar section {
+    display: flex;
+    border-left: 1px solid grey;
+    padding-left: 10px;
+    margin-left: 50px;
+}
+.actionBar {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actionBarTitle {
+
+}
+.actionBarSubTitle {
+    color: gray;
+    margin-left: 10px;
+}
+.actionBarInfo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.actionBarInfo a {
+    color: #ff7b8f;
+}
+.actionBarInfo .userStat {
+}

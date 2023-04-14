@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import { Layout } from '../components/Layout'
-import styles from '../styles/Login.module.css'
+import { Layout } from '@/components/Layout'
+import styles from '@/styles/Login.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Login() {
   return (
-    <Layout style={{backgroundColor: '#ef4d64', height: '100vh'}}>
+    <Layout style={{backgroundColor: '#ef4d64', height: '100vh'}} title={'Tela de Login'}>
         <div className={styles.loginCard}>
           <label>E-MAIL</label>
           <input type='email' placeholder='exemplo@gmail.com'/>
