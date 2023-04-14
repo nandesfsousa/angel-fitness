@@ -8,14 +8,14 @@ import stylesr from '@/styles/Register.module.css'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 
-export default function Register() {
+export default function RegisterPlan() {
   const router = useRouter()
 
   return <Layout style={{backgroundColor: 'rgb(240, 240, 240)', height: '100vh'}}>
     <ActionBar/>
     <div className={styles.manageStudentContainer}>
         <nav>
-            <h1>Cadastro do Aluno</h1>
+            <h1>Cadastro de Plano</h1>
             <div>
             <button onClick={() => router.push('/')} className={styles.backButton} style={{background: 'none', color: 'black', borderWidth: 1}}>
                 VOLTAR
@@ -26,21 +26,19 @@ export default function Register() {
             </div>
         </nav>
         <div className={stylesr.registerContainer}>
-            <label>NOME</label>
-            <input type='text'/>
-            <label>ENDEREÇO DE E-MAIL</label>
+            <label>TÍTULO DO PLANO</label>
             <input type='text'/>
             <div className={stylesr.moreInfoFromStudent}>
                 <div>
-                    <label>IDADE</label>
+                    <label>DURAÇÃO (EM MÊS)</label>
                     <input type='text'/>
                 </div>
                 <div>
-                    <label>PESO (EM KG)</label>
+                    <label>PREÇO MENSAL</label>
                     <input type='text'/>
                 </div>
                 <div>
-                    <label>ALTURA</label>
+                    <label>PREÇO TOTAL</label>
                     <input type='text'/>
                 </div>
             </div>
