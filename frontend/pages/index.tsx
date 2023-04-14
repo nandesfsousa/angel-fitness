@@ -71,6 +71,10 @@ export default function Home() {
           })
         }
       </table>
+      <footer className={styles.naviagtionStudent}>
+        <button>ANTERIOR</button>
+        <button>PRÓXIMO</button>
+      </footer>
 
     </div>
   </Layout>

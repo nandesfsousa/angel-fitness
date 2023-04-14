@@ -110,3 +110,8 @@
 .manageStudentContainer {
     margin-top: 50px;
 }
+.naviagtionStudent {
+    display: flex;
+    padding: 10px 25px;
+    justify-content: end;
+}
