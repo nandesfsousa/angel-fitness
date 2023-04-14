@@ -15,9 +15,6 @@
     background-color: white;
 }
 
-.actionBarTitle {
-
-}
 .actionBarSubTitle {
     color: gray;
     margin-left: 10px;
@@ -30,21 +27,17 @@
 .actionBarInfo a {
     color: #ff7b8f;
 }
-.actionBarInfo .userStat {
-}
 
+.manageStudentContainer nav div {
+    align-items: center;
+}
 .manageStudentContainer nav div input {
     border: 1px solid grey;
     padding: 12px;
-    margin-top: 2px;
+    height: 39px;
     border-radius: 3px;
-    margin-left: 15px;
-}
-.manageStudentContainer nav div {
-    gap: 10px;
 }
 .manageStudentContainer nav div button {
-    margin-top: 10px;
     padding: 12px;
     border-radius: 3px;
     border: none;
@@ -61,6 +54,9 @@
     align-items: center;
     max-width: 70%;
     margin: auto;
+}
+.manageStudentContainer table tr td button {
+    cursor: pointer;
 }
 .manageStudentContainer table tr td button:nth-child(2) {
     color: #ff7b8f;

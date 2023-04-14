@@ -1,14 +1,14 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import { Layout } from '@/components/Layout'
 import { ActionBar } from '@/components/ActionBar'
 import styles from '@/styles/Home.module.css'
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const router = useRouter()
   const [students, setStudents] = useState(
     [
       {
@@ -38,7 +38,7 @@ export default function Home() {
       <nav>
         <h1>Gerenciamento de Alunos</h1>
         <div>
-          <button>
+          <button onClick={() => router.push('/cadastrar')}>
             CADASTRAR
           </button>
           <input placeholder='Buscar aluno'/>

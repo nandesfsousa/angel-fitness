@@ -6,17 +6,20 @@ import { ActionBar } from '@/components/ActionBar'
 import styles from '@/styles/Home.module.css'
 import stylesr from '@/styles/Register.module.css'
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Register() {
+  const router = useRouter()
+
   return <Layout style={{backgroundColor: 'rgb(240, 240, 240)', height: '100vh'}}>
     <ActionBar/>
     <div className={styles.manageStudentContainer}>
         <nav>
             <h1>Cadastro do Aluno</h1>
             <div>
-            <button className={styles.backButton} style={{background: 'none', color: 'black', borderWidth: 1}}>
+            <button onClick={() => router.push('/')} className={styles.backButton} style={{background: 'none', color: 'black', borderWidth: 1}}>
                 VOLTAR
             </button>
             <button>
