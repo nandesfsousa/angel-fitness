@@ -1,43 +1,5 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-:root {
-    background-color: #ef4d64;
-}
-.login-card label {
-    margin-top: 10px;
-    font-size: 9pt;
-}
-.login-card input {
-    border: 1px solid grey;
-    padding: 12px;
-    margin-top: 2px;
-    border-radius: 3px;
-}
-.login-card button:hover {
-    background-color: #ff7b8f;
-}
-.login-card button {
-    margin-top: 10px;
-    padding: 12px;
-    border-radius: 3px;
-    border: none;
-    background-color: #ff4863;
-    color: white;
-    cursor: pointer;
-}
-.login-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    max-width: 350px;
-    margin: auto;
-    background-color: white;
-    height: 400px;
-    padding: 25px;
-    border-radius: 3px;
-    transform: translateY(25%);
 }
