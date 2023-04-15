@@ -1,7 +1,6 @@
-FROM mhart/alpine-node:16
+FROM node:16
 
 RUN mkdir -p /app
-
 WORKDIR /app
 
 COPY . .
