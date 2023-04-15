@@ -1,6 +1,4 @@
-FORMAT: A1
 
-# Documentação do Gympoint
 Abaixo, seguem as rotas disponíveis, que tipo de parâmetros podem ser utilizados para filtrar e o formato das respostas das requisições.
 
 # Listagem de Alunos [GET /students]
