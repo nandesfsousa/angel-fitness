@@ -13,7 +13,7 @@ services:
       - postgres
     networks:
       - gateway
-    # command: yarn sequelize db:migrate && yarn sequelize db:seed:all && yarn queue
+    command: yarn sequelize db:migrate && yarn sequelize db:seed:all && yarn queue
   frontend:
     build: ./frontend
     volumes:
