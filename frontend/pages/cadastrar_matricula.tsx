@@ -15,9 +15,9 @@ export default function RegisterPlan() {
     <ActionBar/>
     <div className={styles.manageStudentContainer}>
         <nav>
-            <h1>Cadastro de Plano</h1>
+            <h1>Cadastro de Matricula</h1>
             <div>
-            <button onClick={() => router.push('/planos')} className={styles.backButton} style={{background: 'none', color: 'black', borderWidth: 1}}>
+            <button onClick={() => router.push('/matriculas')} className={styles.backButton} style={{background: 'none', color: 'black', borderWidth: 1}}>
                 VOLTAR
             </button>
             <button>
@@ -26,19 +26,19 @@ export default function RegisterPlan() {
             </div>
         </nav>
         <div className={stylesr.registerContainer}>
-            <label>TÍTULO DO PLANO</label>
+            <label>ALUNO</label>
             <input type='text'/>
             <div className={stylesr.moreInfoFromStudent}>
                 <div>
-                    <label>DURAÇÃO (EM MÊS)</label>
+                    <label>INICIO</label>
                     <input type='text'/>
                 </div>
                 <div>
-                    <label>PREÇO MENSAL</label>
+                    <label>TÉRMINO</label>
                     <input type='text'/>
                 </div>
                 <div>
-                    <label>PREÇO TOTAL</label>
+                    <label>PLANO</label>
                     <input type='text'/>
                 </div>
             </div>

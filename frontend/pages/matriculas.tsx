@@ -39,7 +39,7 @@ export default function Matriculas() {
       <nav>
         <h1>Gerenciamento de Matriculas</h1>
         <div>
-          <button onClick={() => router.push('/cadastrar')}>
+          <button onClick={() => router.push('/cadastrar_matricula')}>
             CADASTRAR
           </button>
         </div>

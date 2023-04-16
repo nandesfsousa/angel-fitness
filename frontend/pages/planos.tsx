@@ -28,7 +28,7 @@ export default function Plans() {
       <nav>
         <h1>Gerenciamento de Planos</h1>
         <div>
-          <button onClick={() => router.push('/cadastrar')}>
+          <button onClick={() => router.push('/cadastrar_plano')}>
             CADASTRAR
           </button>
         </div>

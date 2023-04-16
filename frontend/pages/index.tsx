@@ -36,7 +36,7 @@ export default function Home() {
       <nav>
         <h1>Gerenciamento de Alunos</h1>
         <div>
-          <button onClick={() => router.push('/cadastrar')}>
+          <button onClick={() => router.push('/cadastrar_aluno')}>
             CADASTRAR
           </button>
           <input placeholder='Buscar aluno'/>
