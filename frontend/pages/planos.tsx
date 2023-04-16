@@ -26,7 +26,7 @@ export default function Plans() {
     <ActionBar/>
     <div className={styles.manageStudentContainer}>
       <nav>
-        <h1>Gerenciamento de Alunos</h1>
+        <h1>Gerenciamento de Planos</h1>
         <div>
           <button onClick={() => router.push('/cadastrar')}>
             CADASTRAR

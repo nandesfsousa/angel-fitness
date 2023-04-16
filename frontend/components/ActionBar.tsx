@@ -4,12 +4,10 @@ import styles from '@/styles/Home.module.css'
 export const ActionBar = () => {
     return <div className={styles.actionBar}>
         <section>
-        <label className={styles.actionBarTitle}>
-            ALUNOS
-        </label>
-        <label className={styles.actionBarSubTitle}>
-            PLANOS MATRÍCULAS PEDIDOS DE AUXÍLIO
-        </label>
+            <Link href='/'>ALUNOS</Link>
+            <Link href='/matriculas'>MATRICULAS</Link>
+            <Link href='/pedidos'>PEDIDOS</Link>
+            <Link href='/planos'>PLANOS</Link>
         </section>
         <label className={styles.actionBarInfo}>
         <span className={styles.userStat}>Adiministrador</span>

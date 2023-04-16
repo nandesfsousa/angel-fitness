@@ -37,7 +37,7 @@ export default function Matriculas() {
     <ActionBar/>
     <div className={styles.manageStudentContainer}>
       <nav>
-        <h1>Gerenciamento de Alunos</h1>
+        <h1>Gerenciamento de Matriculas</h1>
         <div>
           <button onClick={() => router.push('/cadastrar')}>
             CADASTRAR
