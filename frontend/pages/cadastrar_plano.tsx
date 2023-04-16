@@ -10,6 +10,7 @@ import { useRouter } from 'next/router'
 
 export default function RegisterPlan() {
   const router = useRouter()
+  
 
   return <Layout style={{backgroundColor: 'rgb(240, 240, 240)', height: '100vh'}}>
     <ActionBar/>
@@ -42,7 +43,7 @@ export default function RegisterPlan() {
                     <input type='text'/>
                 </div>
             </div>
-        </div>    
+        </div>
     </div>
   </Layout>
 }

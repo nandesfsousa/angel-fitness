@@ -138,3 +138,18 @@
     width: 70%;
     gap: 10px;
 }
+.modal button {
+    position: absolute;
+    bottom: 15px;
+    padding: 10px;
+    border: none;
+    background-color: #ff4863;
+    color: white;
+    border-radius: 5px;
+    right: 15px;
+}
+.modal h1 {
+    font-weight: 400;
+    font-size: 14pt;
+    text-align: center;
+}

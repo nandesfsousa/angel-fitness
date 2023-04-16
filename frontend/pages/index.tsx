@@ -2,8 +2,9 @@ import { Inter } from 'next/font/google'
 import { Layout } from '@/components/Layout'
 import { ActionBar } from '@/components/ActionBar'
 import styles from '@/styles/Home.module.css'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { useRouter } from 'next/router'
+import Modal from 'react-modal'
 
 export default function Home() {
   const router = useRouter()
@@ -29,6 +30,8 @@ export default function Home() {
       }
     ]
   )
+  const [isOpen, setIsOpen] = useState(false);
+  const [user_selected_id, setUserSelectedID] = useState(0);
 
   return <Layout style={{backgroundColor: 'rgb(240, 240, 240)', height: '100vh'}}>
     <ActionBar/>
@@ -54,7 +57,7 @@ export default function Home() {
           </tr>
         </thead>
         <tbody>
-          {students.map((student) => ( <tr key={student.email}>
+          {students.map((student, index) => ( <tr key={student.email}>
               <td>{ student.name }</td>
               <td>{ student.email }</td>
               <td>{ student.age }</td>
@@ -64,7 +67,7 @@ export default function Home() {
                     <i className={'bi bi-x-circle-fill'} style={{color: '#ff0a2f'}}></i>}
               </td>
               <td>
-                <button>EDITAR</button>
+                <button onClick={() => {setIsOpen(true); setUserSelectedID(index) }}>EDITAR</button>
                 <button>APAGAR</button>
               </td>
             </tr>)
@@ -76,5 +79,11 @@ export default function Home() {
         <button>PRÓXIMO</button>
       </footer>
     </div>
+    <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} style={{overlay: {backgroundColor: 'rgba(0, 0, 0, 0.7)'}}}>
+      <div className={styles.modal}>
+        <h1>Editar Aluno: {students.at(user_selected_id).name}</h1>
+        <button onClick={() => setIsOpen(false)}>SALVAR</button>
+      </div>
+    </Modal>
   </Layout>
 }
