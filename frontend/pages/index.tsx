@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
 import Modal from 'react-modal'
+import { modalBaseStyle } from '@/components/Consts'
 
 export default function Home() {
   const router = useRouter()
@@ -79,7 +80,7 @@ export default function Home() {
         <button>PRÓXIMO</button>
       </footer>
     </div>
-    <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} style={{overlay: {backgroundColor: 'rgba(0, 0, 0, 0.7)'}}}>
+    <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} style={modalBaseStyle}>
       <div className={styles.modal}>
         <h1>Editar Aluno: {students.at(user_selected_id).name}</h1>
         <button onClick={() => setIsOpen(false)}>SALVAR</button>
